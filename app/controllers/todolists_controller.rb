@@ -8,6 +8,10 @@ class TodolistsController < ApplicationController
     @list = List.all
   end
   
+  def show
+    @list = List.find(params[:id])
+  end
+  
   def create
     list = List.new(list_params)
     list.save
