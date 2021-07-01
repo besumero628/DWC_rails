@@ -5,7 +5,7 @@ class TodolistsController < ApplicationController
   end
   
   def new
-    @list = List.all
+    @list = List.new
   end
   
   def show
